@@ -15,12 +15,17 @@
 # appears in the list somewhere.
 
 # For example:
+# def arrayCheck(nums):
+#   for i in range(len(nums)-2):
+#     if nums[i] == 1 and nums[i+1] == 2 and nums[i+2] == 3:
+#       print(True)
+#   print(False)
 
-# arrayCheck([1, 1, 2, 3, 1]) → True
-# arrayCheck([1, 1, 2, 4, 1]) → False
-# arrayCheck([1, 1, 2, 1, 2, 3]) → True
+# arrayCheck([1, 1, 2, 3, 1]) # True
+# arrayCheck([1, 1, 2, 4, 1]) # False
+# arrayCheck([1, 1, 2, 1, 2, 3]) # True
 
-def arrayCheck(nums):
+
     # CODE GOES HERE
 
 
@@ -33,11 +38,15 @@ def arrayCheck(nums):
 
 # For example:
 
-# stringBits('Hello') → 'Hlo'
-# stringBits('Hi') → 'H'
-# stringBits('Heeololeo') → 'Hello'
+# def stringBits(str):
+#   newStr = str[::2]
+#   print(newStr)
 
-def stringBits(str):
+# stringBits('Hello') # 'Hlo'
+# stringBits('Hi') # 'H'
+# stringBits('Heeololeo') # 'Hello'
+
+
   # CODE GOES HERE
 
 
@@ -53,13 +62,23 @@ def stringBits(str):
 #
 # Examples:
 #
-# end_other('Hiabc', 'abc') → True
-# end_other('AbC', 'HiaBc') → True
-# end_other('abc', 'abXabc') → True
+# def end_other(a, b):
+#   if len(a) > len(b):
+#     if a[-len(b):].lower() == b.lower():
+#       print(True)
+#     else: print(False)
+#   else:
+#     if b[-len(a):].lower() == a.lower():
+#       print(True)
+#     else: print(False)
 
 
-def end_other(a, b):
-  # CODE GOES HERE
+# end_other('Hiabc', 'abc') # True
+# end_other('AbC', 'HiaBc') # True
+# end_other('abc', 'abXabc') # True
+
+
+
 
 #####################
 ## -- PROBLEM 4 -- ##
@@ -67,13 +86,17 @@ def end_other(a, b):
 
 # Given a string, return a string where for every char in the original,
 # there are two chars.
+# def doubleChar(str):
+#   double = ""
+#   for char in str:
+#     double += char+char
+#   print(double)
 
-# doubleChar('The') → 'TThhee'
-# doubleChar('AAbb') → 'AAAAbbbb'
-# doubleChar('Hi-There') → 'HHii--TThheerree'
+# doubleChar('The') # 'TThhee'
+# doubleChar('AAbb') # 'AAAAbbbb'
+# doubleChar('Hi-There') # 'HHii--TThheerree'
 
-def doubleChar(str):
-  # CODE GOES HERE
+
 
 
 #####################
@@ -93,14 +116,22 @@ def doubleChar(str):
 #
 # Examples:
 #
-# no_teen_sum(1, 2, 3) → 6
-# no_teen_sum(2, 13, 1) → 3
-# no_teen_sum(2, 1, 14) → 3
+# def fix_teen(n):
+#   if n in range(13,15) or n in range(17,20):
+#     return 0
+#   else:
+#     return n
 
-def no_teen_sum(a, b, c):
-  # CODE GOES HERE
-def fix_teen(n):
-  # CODE GOES HERE
+# def no_teen_sum(a, b, c):
+#   taco = fix_teen(a) + fix_teen(b) + fix_teen(c)
+#   print(taco)
+
+
+# no_teen_sum(1, 2, 3) # 6
+# no_teen_sum(2, 13, 1) # 3
+# no_teen_sum(2, 1, 14) # 3
+
+
 
 #####################
 ## -- PROBLEM 6 -- ##
@@ -110,9 +141,15 @@ def fix_teen(n):
 #
 # Examples:
 #
-# count_evens([2, 1, 2, 3, 4]) → 3
-# count_evens([2, 2, 0]) → 3
-# count_evens([1, 3, 5]) → 0
+# def count_evens(nums):
+#   count = 0
+#   for num in nums:
+#     if num%2 == 0:
+#       count = count+1
+#   print(count)
 
-def count_evens(nums):
-  # CODE GOES HERE
+# count_evens([2, 1, 2, 3, 4]) # 3
+# count_evens([2, 2, 0]) # 3
+# count_evens([1, 3, 5]) # 0
+
+
